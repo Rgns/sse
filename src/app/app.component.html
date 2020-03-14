@@ -1,0 +1,12 @@
+<div class="app__wrapper">
+  <ng-container *ngFor="let group of _groups">
+    <app-button *ngIf="group.show"
+                class="app__wrapper-item"
+                [componentName]="group.name"
+                (buttonClick)="_onButtonClick($event)"
+    ></app-button>
+  </ng-container>
+</div>
+
+
+

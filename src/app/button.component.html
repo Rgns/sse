@@ -1,0 +1,9 @@
+{{componentName}}
+<div class="button__wrapper">
+  <div class="button__wrapper-button"
+       *ngFor="let button of _buttons"
+       (click)="buttonClick.emit(button.name)"
+  >
+    {{ button.name}}
+  </div>
+</div>
